@@ -1,2 +1,2 @@
 # python3_algorithm
-algorithm
+日常记录pyhton3的各种函数用法与技巧
