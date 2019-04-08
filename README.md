@@ -67,13 +67,13 @@ print('yes!') if not re.match(r'1?$|(11+?)\1+$','1'*N) else print('no!')
 ## 6.for ... else ...
 
 ```python
-for i in xrange(1,10):
+for i in range(1,10):
 	if i == 1:
 		print("Yes")
 		break
 else:
 	print("No")
-for i in xrange(1,10):
+for i in range(1,10):
 	if i == 1:
 		print("Yes")
 else:
