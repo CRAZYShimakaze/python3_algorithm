@@ -64,3 +64,25 @@ set.discard()不存在不报错
 print('yes!') if not re.match(r'1?$|(11+?)\1+$','1'*N) else print('no!')
 ```
 
+## 6.for ... else ...
+
+```python
+for i in xrange(1,10):
+	if i == 1:
+		print("Yes")
+		break
+else:
+	print("No")
+for i in xrange(1,10):
+	if i == 1:
+		print("Yes")
+else:
+	print("No")
+Yes
+Yes
+No
+```
+
+## 7.global
+声明变量为全局变量，函数内部也可使用。
+
