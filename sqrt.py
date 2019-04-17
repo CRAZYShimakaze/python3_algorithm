@@ -1,6 +1,3 @@
-a = 60
-
-
 def sqtr(a):
     def sqt(a):
         if abs(a**2 - target) < 0.1:
@@ -25,7 +22,3 @@ def s(x):
         else:
             low = (low + high) / 2
     return (low + high) / 2
-
-
-c = s(a)
-print(c)
