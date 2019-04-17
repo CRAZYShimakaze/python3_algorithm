@@ -33,6 +33,6 @@ def quick(x):
         else:
             left.append(item)
     return quick(left) + [cmp] + quick(right)
-a = [1,23,4,62,73,5,257,2,45]
+a = [1,22,4,62,73,5,257,2,45]
 x = quick(a)
 print(x)
