@@ -16,6 +16,6 @@ def compute_iou(a, b):
 
 rect1 = (663, 27, 679, 47)
 # (bottom, left, top, right)
-rect2 = (663, 27, 679, 47)
+rect2 = (661, 22, 677, 45)
 iou = compute_iou(rect1, rect2)
 print(iou)
