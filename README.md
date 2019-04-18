@@ -1,4 +1,5 @@
 # Python3_algorithm
+
 日常记录pyhton3的各种函数用法与技巧
 
 ## 1.str.strip()
@@ -6,7 +7,7 @@
 只要头尾包含有指定字符序列中的字符就删除：
 
 ```python
-   "12abcrob321" 
+   "12abcrob321"
    print(str.strip('12'))#字符序列为12
    abcrob3
 ```
@@ -64,30 +65,33 @@ set.discard()不存在不报错
 print('yes!') if not re.match(r'1?$|(11+?)\1+$','1'*N) else print('no!')
 ```
 
-## 6.for ... else ...
+## 6.for ... else
 
 ```python
 for i in range(1,10):
-	if i == 1:
-		print("Yes")
-		break
+    if i == 1:
+        print("Yes")
+        break
 else:
-	print("No")
+    print("No")
 for i in range(1,10):
-	if i == 1:
-		print("Yes")
+    if i == 1:
+        print("Yes")
 else:
-	print("No")
+    print("No")
 Yes
 Yes
 No
 ```
 
 ## 7.global
+
 声明变量为全局变量，函数内部也可使用。
 
 ## 8.queue
+
 双端队列：
+
 ```python
 q = queue.deque()
 q.popleft()
