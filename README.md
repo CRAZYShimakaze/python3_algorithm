@@ -86,3 +86,10 @@ No
 ## 7.global
 声明变量为全局变量，函数内部也可使用。
 
+## 8.queue
+双端队列：
+```python
+q = queue.deque()
+q.popleft()
+q.appendleft()
+```
