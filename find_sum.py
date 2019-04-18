@@ -10,5 +10,5 @@ def find_sum(lis, target):
     return answer
 
 
-lis = [1, 3, 34, 5, 6, 8, 4, 2, 2]
+lis = [1, 3, 34, 25, 6, 8, 4, 2, 2]
 print(find_sum(lis, 7))
