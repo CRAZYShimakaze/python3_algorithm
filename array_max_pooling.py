@@ -21,4 +21,4 @@ def max_pooling(array_p, m):
 
 
 lis = [5, 4, 3, 2, 8, 2, 2, 2, 11]
-print(max_pooling(lis, 7))
+print(max_pooling(lis, 4))
