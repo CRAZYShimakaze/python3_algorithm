@@ -12,5 +12,5 @@ def find_most_number(array):
     return number
 
 
-list_ = [1, 1, 2, 3, 1, 2, 2, 2]
-print(find_most_number(list_))
+list = [1, 1, 2, 3, 1, 2, 2, 2]
+print(((find_most_number(list))))
