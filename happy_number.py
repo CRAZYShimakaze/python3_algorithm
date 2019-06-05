@@ -1,11 +1,8 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        if n == 1:
-            return True
-        n = sum(list(map(lambda x: int(x)**2, str(n))))
         alr = [n]
         while (alr[-1] != 1):
-            n = sum(list(map(lambda x: int(x)**2, str(n))))
+            n = sum(int(item)**2 for item in str(n))
             if n in alr:
                 return False
             alr.append(n)
