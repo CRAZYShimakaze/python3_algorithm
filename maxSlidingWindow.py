@@ -23,5 +23,25 @@ class Solution:
         for i in range(len(nums)-k+1):
             max_list.append(left[i+k-1] if left[i+k-1]>right[i] else right[i])
         return max_list
-        
+    def maxandmin(nums,window):
+        deq = deque()
+        max_index = 0
+        for i in range(window):
+            if deq and deq[0] == i-window:
+                deq.popleft()
+            while deq and nums[deq[-1]]<nums[i]:
+                deq.pop()
+            deq.append(i)
+            if nums[i]>nums[max_index]:
+                max_index = i
+        out = [nums[max_index]]
+        for i in range(window,len(nums)):
+            if deq and deq[0] == i-window:
+                deq.popleft()
+            while deq and nums[deq[-1]]<nums[i]:
+                deq.pop()
+            deq.append(i)
+            out.append(nums[deq[0]])
+        return out         
 print(Solution().maxSlidingWindow([1,2,3,4,2,4,54,5,6,4,3],3))
+print(Solution().maxandmin([1,2,3,4,2,4,54,5,6,4,3],3))
