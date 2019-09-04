@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+'''
+@Date: 2019-06-05 17:32:11
+@Author: CRAZYShimakaze
+'''
 class Solution:
     def rob(self, nums):
         if len(nums) <= 2:
