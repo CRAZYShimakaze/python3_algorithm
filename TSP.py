@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 @Date: 2019-06-26 20:19:22
-@Author: CRAZYSHIMAKAZE
+@Author: CRAZYShimakaze
 '''
 number = int(input())
 tanxin = [[-float('inf') for i in range(number)]for i in range(number)]
