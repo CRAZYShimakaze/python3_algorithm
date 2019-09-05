@@ -35,12 +35,8 @@ class TSP_Solve():
             return min(dist + self.tanxin[start][0],self.min_dist)
         a = INT_MAX
         for item in unc:
-            newdist = dist + self.tanxin[start][item]
-            if newdist < self.min_dist:
-                newstart = item
-                a = min(a, self.huisuTSP([i for i in unc if i != item], newstart, newdist))
-            newdist = dist
-            newstart = start
+            if dist + self.tanxin[start][item] < self.min_dist:
+                a = min(a,self.huisuTSP([i for i in unc if i != item], item,dist + self.tanxin[start][item]))
         return a
 
 INT_MAX = float('inf')
