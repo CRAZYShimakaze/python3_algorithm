@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: m红球个数，n白球个数，x拿球个数，求拿到红球多于白球的概率
+@Date: 2019-09-04 21:33:59
+@Author: CRAZYShimakaze
+'''
 def pro(m, n, x, y):
     if(y>x): return 0
     if(y==0): return 1

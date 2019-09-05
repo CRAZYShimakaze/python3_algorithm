@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 单词拆分
+@Date: 2019-04-23 12:15:06
+@Author: CRAZYShimakaze
+'''
 def wordSplit(s, dic):
     # write your code here
     # dic = set(dic)

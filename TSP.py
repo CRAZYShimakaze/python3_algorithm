@@ -50,5 +50,5 @@ for i in range(int(input())):
     s, t, l = map(int, input().split())
     tanxin[s][t], tanxin[t][s] = l, l
 ss = TSP_Solve(number, tanxin)
-print(ss.tanxinTSP(tanxin,number))
-print(ss.huisuTSP([i for i in range(1, number)]))
+print('贪心算法：{}'.format(ss.tanxinTSP(tanxin,number)))#局部最优
+print('回溯算法：{}'.format(ss.huisuTSP([i for i in range(1, number)])))

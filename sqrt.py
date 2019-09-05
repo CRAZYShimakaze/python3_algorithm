@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 求平方根
+@Date: 2019-04-18 17:52:38
+@Author: CRAZYShimakaze
+'''
 def sqtr(a):
     def sqt(a):
         if abs(a**2 - target) < 0.1:

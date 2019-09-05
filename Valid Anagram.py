@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 有效字母的异位词
+@Date: 2019-06-05 16:24:26
+@Author: CRAZYShimakaze
+'''
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
