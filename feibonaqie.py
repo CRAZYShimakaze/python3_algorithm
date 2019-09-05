@@ -6,11 +6,15 @@
 '''
 def feibonaqie(a, b, num):
     cnt = 0
+    if [a, b] in alr:
+        return -float('inf')
+    else:
+        alr.append([a,b])
     while a + b in num:
         cnt += 1
         a,b = b,a+b
     return cnt + 2
-
+alr = []#空间换时间
 num = list(map(int, input().split()))
 max_len = -float('inf')
 for i in range(len(num)):
