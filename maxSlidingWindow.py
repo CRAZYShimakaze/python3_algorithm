@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+'''
+@Description:滑动窗口最大值
+@Date: 2019-09-04 21:33:59
+@Author: CRAZYShimakaze
+'''
+import queue
 class Solution:
     def maxSlidingWindow(self, nums: 'List[int]', k: 'int') -> 'List[int]':
         left = []
@@ -23,8 +30,8 @@ class Solution:
         for i in range(len(nums)-k+1):
             max_list.append(left[i+k-1] if left[i+k-1]>right[i] else right[i])
         return max_list
-    def maxandmin(nums,window):
-        deq = deque()
+    def maxandmin(self,nums,window):
+        deq = queue.deque()
         max_index = 0
         for i in range(window):
             if deq and deq[0] == i-window:

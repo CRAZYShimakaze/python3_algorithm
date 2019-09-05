@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 排序算法
+@Date: 2019-04-18 18:05:51
+@Author: CRAZYShimakaze
+'''
 def bubble(x):
     for i in range(len(x)-1):
         for j in range(len(x)-i-1):

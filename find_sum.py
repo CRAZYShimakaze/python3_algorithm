@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 给定一个数，求列表中加起来等于此数的两个数
+@Date: 2019-04-22 11:22:11
+@Author: CRAZYShimakaze
+'''
 def find_sum(lis, target):
     answer_list = []
     answer = []

@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 给定一个一维数组和窗口长度，步长为1，求最大池化后的结果
+@Date: 2019-04-18 18:05:51
+@Author: CRAZYShimakaze
+'''
 import queue
 
 

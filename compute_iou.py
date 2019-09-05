@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: 计算iou
+@Date: 2019-04-18 17:52:38
+@Author: CRAZYShimakaze
+'''
 def compute_iou(a, b):
     area1 = (a[2] - a[0]) * (a[3] - a[1])
     area2 = (b[2] - b[0]) * (b[3] - b[1])

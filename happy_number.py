@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: https://leetcode-cn.com/problems/happy-number/
+@Date: 2019-06-05 16:57:03
+@Author: CRAZYShimakaze
+'''
 class Solution:
     def isHappy(self, n: int) -> bool:
         alr = [n]
@@ -12,4 +18,3 @@ class Solution:
 s = Solution()
 print(s.isHappy(256))
 print(s.isHappy(19))
-#https://leetcode-cn.com/problems/happy-number/

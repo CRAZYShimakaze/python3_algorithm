@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+'''
+@Description: https://www.jiuzhang.com/solution/create-maximum-number/#tag-highlight-lang-python
+@Date: 2019-06-03 16:30:22
+@Author: CRAZYShimakaze
+'''
 class Solution:
     def maxNumber(self, nums1, nums2, k):
         # Write your code here
@@ -24,5 +30,3 @@ class Solution:
 
 s = Solution()
 print(s.maxNumber([3, 4, 6, 5], [9, 1, 2, 5, 8, 3], 7))
-------------------------------------------
-#https://www.jiuzhang.com/solution/create-maximum-number/#tag-highlight-lang-python
