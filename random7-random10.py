@@ -7,7 +7,5 @@
 import random
 x = 41
 while x>=40:
-    x = (random.randint(1, 7)-1) * 10 + random.randint(1, 7)-1
+    x = (random.randint(1, 7)-1) * 7 + random.randint(1, 7)-1
 print(x//4+1)
-
-
