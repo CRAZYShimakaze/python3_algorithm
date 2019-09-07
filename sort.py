@@ -45,8 +45,21 @@ def quick(x):
         else:
             left.append(item)
     return quick(left) + [cmp] + quick(right)
-
-
+def quick_std(x):
+    def partition(start, end):
+        if start < end:
+            sort_index = start
+            for i in range(start,end):
+                if x[i] < x[end]:
+                    x[sort_index],x[i] = x[i],x[sort_index]
+                    sort_index += 1
+            x[end], x[sort_index] = x[sort_index], x[end]
+            partition(start, sort_index - 1)
+            partition(sort_index + 1, end)
+    if len(x) <= 1:
+        return x
+    partition(0, len(x) - 1)
+    return x
 a = [1, 22, 4, 62, 73, 5, 257, 12, 45]
-x = quick(a)
+x = quick_std(a)
 print(x)
