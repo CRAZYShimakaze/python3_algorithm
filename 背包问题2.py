@@ -4,7 +4,7 @@
 @Date: 2019-09-10 14:06:55
 @Author: CRAZYShimakaze
 '''
-class Solution:
+class Solution1:
     """
     @param m: An integer m denotes the size of a backpack
     @param A: Given n items with size A[i]
@@ -14,12 +14,21 @@ class Solution:
         # write your code here
         dp = [[0 for i in range(m+1)]for j in range(len(A))]
         for i in range(len(A)):
-            for j in range(0,m+1):
-                if A[i] > j:
-                    dp[i][j] = dp[i - 1][j]
-                else:
-                    dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - A[i]] + B[i])
+            for j in range(A[i], m+1):
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - A[i]] + B[i])
         return dp[len(A) - 1][m]
 
+
+class Solution:
+    # @param m: An integer m denotes the size of a backpack
+    # @param A & V: Given n items with size A[i] and value V[i]
+    def backPack(self, m, A, V):
+        # write your code here
+        f = [0 for i in range(m+1)]
+        n = len(A)
+        for i in range(n):
+            for j in range(m, A[i]-1, -1):
+                f[j] = max(f[j], f[j-A[i]] + V[i])
+        return f[m]
 
 print(Solution().backPack(12, [2, 3, 5, 7], [3, 5, 2, 6]))
