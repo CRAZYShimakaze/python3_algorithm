@@ -4,6 +4,8 @@
 @Date: 2019-04-18 18:05:51
 @Author: CRAZYShimakaze
 '''
+
+
 def bubble(x):
     for i in range(len(x)-1):
         for j in range(len(x)-i-1):
@@ -45,13 +47,15 @@ def quick(x):
         else:
             left.append(item)
     return quick(left) + [cmp] + quick(right)
+
+
 def quick_std(x):
     def partition(start, end):
         if start < end:
             sort_index = start
-            for i in range(start,end):
+            for i in range(start, end):
                 if x[i] < x[end]:
-                    x[sort_index],x[i] = x[i],x[sort_index]
+                    x[sort_index], x[i] = x[i], x[sort_index]
                     sort_index += 1
             x[end], x[sort_index] = x[sort_index], x[end]
             partition(start, sort_index - 1)
@@ -60,6 +64,8 @@ def quick_std(x):
         return x
     partition(0, len(x) - 1)
     return x
+
+
 a = [1, 22, 4, 62, 73, 5, 257, 12, 45]
-x = quick_std(a)
+x = insert(a)
 print(x)
